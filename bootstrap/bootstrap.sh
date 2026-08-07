@@ -6,6 +6,8 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 source "${SCRIPT_DIR}/common.sh"
 
-log_info "Starting Infraserver Bootstrap..."
+print_banner
 
-log_success "Bootstrap initialized."
+log_info "Initializing bootstrap framework..."
+
+log_success "Bootstrap framework loaded."
