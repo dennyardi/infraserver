@@ -14,6 +14,6 @@ check_root
 check_debian
 check_internet
 
-echo
+print_blank_line
 
 log_success "Bootstrap framework ready."
