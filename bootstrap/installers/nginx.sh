@@ -19,6 +19,8 @@ main() {
 
     prepare_nginx_environment
 
+    install_nginx
+
     log_success "Nginx installer initialized."
 
 }
