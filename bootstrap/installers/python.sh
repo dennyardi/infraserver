@@ -28,9 +28,9 @@ main() {
 
     prepare_python_environment
     install_python
-    # verify_python
+    verify_python
 
-    log_success "Python installer initialized."
+    log_success "Python installer completed."
 
 }
 
