@@ -19,6 +19,7 @@ main() {
     log_info "Starting PostgreSQL installation..."
 
     prepare_postgresql_environment
+    install_postgresql
 
     log_success "PostgreSQL installer initialized."
 

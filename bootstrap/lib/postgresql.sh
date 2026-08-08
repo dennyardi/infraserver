@@ -16,3 +16,13 @@ prepare_postgresql_environment() {
     log_success "Environment ready."
 
 }
+
+install_postgresql() {
+
+    log_info "Installing PostgreSQL..."
+
+    package_install postgresql
+
+    log_success "PostgreSQL installed."
+
+}
