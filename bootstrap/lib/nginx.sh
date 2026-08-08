@@ -58,6 +58,13 @@ verify_nginx() {
         exit 1
     fi
 
+    if nginx -t >/dev/null 2>&1; then
+        log_success "Nginx configuration : valid"
+    else
+        log_error "Nginx configuration test failed."
+        exit 1
+    fi
+
     log_success "nginx available."
 
 }
