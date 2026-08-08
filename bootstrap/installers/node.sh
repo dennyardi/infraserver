@@ -29,9 +29,9 @@ main() {
 
     install_nodesource_repository
     install_nodejs
-    # verify_nodejs 
+    verify_nodejs 
 
-    log_success "Node.js installer initialized."
+    log_success "Node.js installer completed."
 }
 
 main "$@"
