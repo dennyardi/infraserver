@@ -25,12 +25,13 @@ main() {
 
     log_info "Starting Node.js installation..."
 
-    # TODO
-    # install_nodesource_repository
-    # install_nodejs
-    # verify_nodejs
+    prepare_node_environment
 
-    log_success "Node.js installer initialized."
+    install_nodesource_repository
+    install_nodejs
+    verify_nodejs 
+
+    log_success "Node.js installer completed."
 }
 
 main "$@"
