@@ -19,9 +19,8 @@ echo "Architecture  : $(get_architecture)"
 
 echo
 
-if is_debian; then
-    log_success "Debian detected."
-else
-    log_error "Unsupported operating system."
-    exit 1
-fi
+check_root
+check_debian
+check_internet
+
+log_success "Bootstrap framework ready."
