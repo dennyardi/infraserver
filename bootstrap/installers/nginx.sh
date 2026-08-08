@@ -21,7 +21,11 @@ main() {
 
     install_nginx
 
-    log_success "Nginx installer initialized."
+    start_nginx_service
+
+    verify_nginx
+
+    log_success "Nginx installer completed."
 
 }
 

@@ -26,3 +26,38 @@ install_nginx() {
     log_success "Nginx installed."
 
 }
+
+start_nginx_service() {
+
+    log_info "Starting Nginx service..."
+
+    systemctl enable --now nginx
+
+    log_success "Nginx service started."
+
+}
+
+verify_nginx() {
+
+    log_info "Verifying Nginx installation..."
+
+    if ! command_exists nginx; then
+        log_error "Nginx command not found."
+        exit 1
+    fi
+
+    local version
+    version=$(nginx -v 2>&1 | cut -d'/' -f2)
+
+    log_success "Nginx version : ${version}"
+
+    if systemctl is-active --quiet nginx; then
+        log_success "Nginx service : active"
+    else
+        log_error "Nginx service is not running."
+        exit 1
+    fi
+
+    log_success "nginx available."
+
+}
