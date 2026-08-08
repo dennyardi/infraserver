@@ -31,7 +31,7 @@ start_postgresql_service() {
 
     log_info "Starting PostgreSQL service..."
 
-    systemctl enable --now postgresql
+    service_enable_now postgresql
 
     log_success "PostgreSQL service started."
 
@@ -51,7 +51,7 @@ verify_postgresql() {
 
     log_success "PostgreSQL version : ${version}"
 
-    if systemctl is-active --quiet postgresql; then
+    if service_is_active postgresql; then
         log_success "PostgreSQL service : active"
     else
         log_error "PostgreSQL service is not running."

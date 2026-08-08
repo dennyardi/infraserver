@@ -31,7 +31,7 @@ start_nginx_service() {
 
     log_info "Starting Nginx service..."
 
-    systemctl enable --now nginx
+    service_enable_now nginx
 
     log_success "Nginx service started."
 
@@ -51,7 +51,7 @@ verify_nginx() {
 
     log_success "Nginx version : ${version}"
 
-    if systemctl is-active --quiet nginx; then
+    if service_is_active nginx; then
         log_success "Nginx service : active"
     else
         log_error "Nginx service is not running."
