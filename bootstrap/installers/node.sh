@@ -27,7 +27,7 @@ main() {
 
     prepare_node_environment
 
-    # install_nodesource_repository
+    install_nodesource_repository
     # install_nodejs
     # verify_nodejs 
 
