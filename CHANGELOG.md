@@ -16,3 +16,15 @@
 - NodeSource GPG overwrite
 - Git workflow improvements
 - Installer idempotency
+
+## v0.4.0
+
+### Added
+
+- PostgreSQL installer
+- PostgreSQL service management
+- PostgreSQL installation verification
+
+### Improved
+
+- Installer architecture consistency
