@@ -26,8 +26,8 @@ main() {
 
     log_info "Starting Python installation..."
 
-    # TODO
-    # prepare_python_environment
+    prepare_python_environment
+
     # install_python_repository
     # install_python
     # verify_python
