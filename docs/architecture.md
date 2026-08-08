@@ -1,29 +1,44 @@
-# Architecture
+# Architecture Decisions
 
-```text
-                GitHub
-                   │
-                   ▼
-        Infraserver Repository
-                   │
-                   ▼
-            bootstrap.sh
-                   │
-        ┌──────────┴──────────┐
-        ▼                     ▼
-  Security Setup      Runtime Installation
-        │                     │
-        └──────────┬──────────┘
-                   ▼
-              Golden VPS
-                   │
-                   ▼
-                 vpsctl
-                   │
-                   ▼
-          Deploy Application
-```
+## Runtime Philosophy
 
-## Deployment Flow
+Installer harus menghasilkan runtime yang siap digunakan.
 
-GitHub → Bootstrap → VPS → Deploy Application
+---
+
+## Python
+
+Repository:
+
+- Debian Official Repository
+
+Reason:
+
+- Stable
+- Secure
+- Production Ready
+
+---
+
+## Node.js
+
+Repository:
+
+- NodeSource
+
+Reason:
+
+- Latest LTS
+- Official Distribution
+
+---
+
+## Idempotency
+
+Semua installer wajib idempotent.
+
+---
+
+## Logging
+
+Semua output menggunakan logger framework.
