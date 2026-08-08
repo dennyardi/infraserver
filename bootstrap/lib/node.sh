@@ -36,3 +36,13 @@ install_nodesource_repository() {
 
     log_success "NodeSource repository added."
 }
+
+install_nodejs() {
+
+    log_info "Installing Node.js..."
+
+    package_install nodejs
+
+    log_success "Node.js installed."
+
+}

@@ -28,7 +28,7 @@ main() {
     prepare_node_environment
 
     install_nodesource_repository
-    # install_nodejs
+    install_nodejs
     # verify_nodejs 
 
     log_success "Node.js installer initialized."
