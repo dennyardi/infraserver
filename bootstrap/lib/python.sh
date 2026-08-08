@@ -22,3 +22,16 @@ prepare_python_environment() {
     log_success "Environment ready."
 
 }
+
+install_python() {
+
+    log_info "Installing Python..."
+
+    package_install \
+        python3 \
+        python3-pip \
+        python3-venv
+
+    log_success "Python installed."
+
+}

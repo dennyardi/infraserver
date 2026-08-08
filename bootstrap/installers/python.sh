@@ -27,9 +27,7 @@ main() {
     log_info "Starting Python installation..."
 
     prepare_python_environment
-
-    # install_python_repository
-    # install_python
+    install_python
     # verify_python
 
     log_success "Python installer initialized."
