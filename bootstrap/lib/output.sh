@@ -1,7 +1,16 @@
 #!/usr/bin/env bash
 
+#
+# ============================================================
+# Infraserver - Output Library
+# Version : v0.1.0
+# Purpose : Display banner, sections and system information
+# ============================================================
+#
+
 print_line() {
-    printf '%*s\n' "${COLUMNS:-60}" '' | tr ' ' '='
+    printf '=%.0s' {1..60}
+    echo
 }
 
 print_banner() {

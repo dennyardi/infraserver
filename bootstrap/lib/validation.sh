@@ -1,5 +1,13 @@
 #!/usr/bin/env bash
 
+#
+# ============================================================
+# Infraserver - Validation Library
+# Version : v0.1.0
+# Purpose : Validate system requirements
+# ============================================================
+#
+
 check_root() {
     if [[ $EUID -ne 0 ]]; then
         log_error "This script must be run as root."

@@ -1,5 +1,13 @@
 #!/usr/bin/env bash
 
+#
+# ============================================================
+# Infraserver - Package Library
+# Version : v0.1.0
+# Purpose : Package manager wrapper
+# ============================================================
+#
+
 package_update() {
     log_info "Updating package index..."
 
@@ -9,10 +17,9 @@ package_update() {
 }
 
 package_install() {
-
-    log_info "Installing: $*"
+    log_info "Installing packages: $*"
 
     apt-get install -y "$@"
 
-    log_success "Installation completed."
+    log_success "Package installation completed."
 }
