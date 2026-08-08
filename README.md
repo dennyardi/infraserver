@@ -2,7 +2,7 @@
 
 > CLI-first Infrastructure as Code framework for Debian Servers.
 
-Infraserver adalah framework untuk melakukan provisioning, deployment, dan pengelolaan VPS Debian tanpa menggunakan panel.
+Infraserver adalah framework untuk provisioning, deployment, dan pengelolaan VPS Debian tanpa menggunakan panel.
 
 Tujuan utama proyek ini adalah membuat VPS baru dapat digunakan hanya dalam beberapa menit dengan konfigurasi yang konsisten.
 
@@ -50,37 +50,66 @@ examples/
 
 ---
 
-# Project Status
+# Installers
 
-## Phase 1
+| Installer | Status | Documentation |
+|-----------|--------|---------------|
+| Node.js | ✅ Completed | docs/installers/node.md |
+| Python | 🚧 Planned | - |
+| PostgreSQL | 🚧 Planned | - |
+| Nginx | 🚧 Planned | - |
+| PM2 | 🚧 Planned | - |
 
-- [x] Repository
-- [x] Folder Structure
-- [x] Security
-- [x] Basic Tools
+---
 
-## Phase 2
+# Project Roadmap
 
-- [ ] Node.js
-- [ ] Python
-- [ ] PM2
+## Milestone 1 — Bootstrap Framework
 
-## Phase 3
+- ✅ Bootstrap Framework
+- ✅ Validation Library
+- ✅ Package Library
+- ✅ Logging Library
 
-- [ ] Nginx
-- [ ] PostgreSQL
+---
 
-## Phase 4
+## Milestone 2 — Node.js Installer
 
-- [ ] Bootstrap
+- ✅ Environment Preparation
+- ✅ NodeSource Repository
+- ✅ Node.js Installation
+- ✅ Verification
+- ✅ Documentation
 
-## Phase 5
+---
 
-- [ ] Ansible
+## Milestone 3
 
-## Phase 6
+- 🚧 Python Installer
 
-- [ ] VPSCTL
+---
+
+## Milestone 4
+
+- 🚧 PostgreSQL Installer
+
+---
+
+## Milestone 5
+
+- 🚧 Nginx Installer
+
+---
+
+## Milestone 6
+
+- 🚧 PM2 Installer
+
+---
+
+# Documentation
+
+- docs/installers/node.md
 
 ---
 
